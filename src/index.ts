@@ -39,6 +39,32 @@ let user: User = {
     name: "red"
 }
 
+//readonly
+type Product = {
+    readonly id : number,
+    name: string
+}
+
+let productOne: Product = {
+    id : 22,
+    name: "Product One"
+}
+
+//Optional - ?
+type Person = {
+    name: string,
+    age: number, 
+    hometown?: string,
+}
+
+let red = {
+    name: "Red Primary",
+    age: 25
+}
+
+// productOne.id = 23;
+productOne.name = "Product Three";
+
 //functions 
 function add(a: number, b:number): number{
     return a +b;
@@ -69,6 +95,6 @@ interface MathFunc {
 const addition: MathFunc = (a, b) => a + b;
 const division: MathFunc = (a, b) => a / b;
 
-
 addition(5, 7);
 division(90, 6);
+

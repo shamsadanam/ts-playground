@@ -28,6 +28,16 @@ let user = {
     id: 1,
     name: "red"
 };
+let productOne = {
+    id: 22,
+    name: "Product One"
+};
+let red = {
+    name: "Red Primary",
+    age: 25
+};
+// productOne.id = 23;
+productOne.name = "Product Three";
 //functions 
 function add(a, b) {
     return a + b;
